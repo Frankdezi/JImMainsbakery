@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  background-color: #6B0E04;
+}
+
+.food {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 1em;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.food ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.food #topping {
+  padding: 10px;
+  text-align: center;
+}
+
+.food .options {
+  padding: 10px;
+  text-align: center;
+}
+
+.food h2 {
+  padding: 5px;
+}
+
+.food h2,
+.food p {
+  text-align: center;
+}
+
+.food #caketxt {
+  display: flex;
+  text-align: center;
+}
+
+.food #caketxt #size {
+  margin-right: 50px;
+}
+
+.food #caketxt #plain {
+  margin-left: 100px;
+}
+
+.food #caketxt #filling {
+  margin-left: 40px;
+  float: right;
+}
+
+#pie {
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 1em;
+  flex-wrap: wrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+#pie #pielist {
+  display: flex;
+  flex-direction: row;
+}
+
+#pie h2,
+#pie p {
+  padding: 5px;
+}
+
+#special {
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+  font-size: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+}
+
+#special #spec {
+  width: 250px;
+  border: 5px dotted white;
+}
+
+#special #tax {
+  padding: 5px;
+  margin-top: 70px;
+}
+
+@media screen and (min-width: 560px) {
+  .food {
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+}
+
+@media screen and (min-width: 960px) {
+  #pie {
+    font-size: 1.5em;
+  }
+  .food {
+    font-size: 1.5em;
+  }
+}

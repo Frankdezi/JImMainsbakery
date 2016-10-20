@@ -1,0 +1,385 @@
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: white;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  margin: 0;
+}
+
+nav {
+  background: white;
+}
+
+nav #logo {
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  padding: 10px;
+  margin: 20px;
+  border-radius: 50px;
+  font-size: 1.4em;
+  font-family: "Oswald", sans-serif;
+}
+
+nav a:hover {
+  background-color: #D9D8DF;
+}
+
+.topper {
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-bottom: solid 2px black;
+}
+
+.topper p {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 2.5em;
+}
+
+#gall #gal1 {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: flex-start;
+  background-color: #6B0E04;
+}
+
+#gall #gal1 figure {
+  margin: 5px;
+}
+
+#gall #gal1 figure img {
+  width: 260px;
+  height: 280px;
+}
+
+#gall #gal2 {
+  display: none;
+}
+
+#weltxt {
+  font-family: 'Cutive', serif;
+  font-size: 15px;
+  text-align: center;
+  background-color: #6B0E04;
+  color: #FCFDF4;
+  border-bottom: solid 2px black;
+  padding: 10px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+#weltxt #weltxt1 {
+  font-size: 2.5em;
+  padding-bottom: 50px;
+}
+
+#weltxt #subwel {
+  font-size: 1.3em;
+}
+
+#welcome {
+  font-family: "PT Sans", sans-serif;
+  font-size: 1.1em;
+  background-color: #D0C3C4;
+  padding-top: 20px;
+}
+
+#welcome #info1,
+#welcome #info2 {
+  background-color: white;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#welcome #info1 #map1,
+#welcome #info1 #map2,
+#welcome #info2 #map1,
+#welcome #info2 #map2 {
+  display: none;
+}
+
+#welcome ul {
+  list-style: none;
+  padding-left: 0;
+  padding: 10px;
+  width: 100%;
+}
+
+#welcome ul li {
+  color: #6D6576;
+}
+
+#welcome ul li a {
+  color: #6D6576;
+}
+
+#Vine,
+#Mal {
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#info2 {
+  margin-bottom: 20px;
+}
+
+footer {
+  background-color: #6B0E04;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  align-items: center;
+}
+
+footer i {
+  display: inline-block;
+  color: cornflowerblue;
+}
+
+footer #face a {
+  text-decoration: none;
+  color: #FCFDF4;
+  font-family: "PT Sans", sans-serif;
+}
+
+footer #footmenu {
+  font-family: "Josefin Sans", sans-serif;
+}
+
+footer #footmenu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer #footmenu ul li {
+  float: left;
+}
+
+footer #footmenu ul li a {
+  color: #FCFDF4;
+  display: inline-block;
+  padding: 5px;
+  text-align: center;
+  text-decoration: none;
+}
+
+footer #FM {
+  color: #FCFDF4;
+  font-size: .8em;
+  font-family: "Oswald", sans-serif;
+}
+
+footer #FM a {
+  color: #FCFDF4;
+}
+
+@media screen and (min-width: 360px) {
+  nav #Blogo {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+  }
+  nav #Blogo img {
+    flex: 1 1 0;
+  }
+  nav #Blogo ul {
+    flex: 1 1 0;
+  }
+  #weltxt {
+    font-size: 1.5em;
+    height: 450px;
+  }
+  #weltxt #weltxt1 {
+    font-size: 2em;
+  }
+  #welcome ul {
+    display: inline-block;
+    list-style: none;
+    line-height: 30px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  #welcome ul ul {
+    box-shadow: none;
+    padding-top: 0;
+  }
+  iframe {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 560px) {
+  nav #Blogo {
+    display: block;
+  }
+  nav #Blogo #logo {
+    width: auto;
+    position: absolute;
+  }
+  nav #Blogo ul {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 210px;
+  }
+  nav #Blogo ul li a {
+    font-size: 1.3em;
+    margin: 0;
+  }
+  #welcome {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #welcome #Vine {
+    width: 100%;
+  }
+  #welcome #Mal {
+    width: 100%;
+  }
+  #welcome #info1 {
+    margin-bottom: 50px;
+  }
+  #welcome #info1 ul {
+    width: 400px;
+  }
+  #welcome #info1 #map1 {
+    width: 500px;
+    display: inherit;
+  }
+  #welcome #info2 ul {
+    width: 400px;
+  }
+  #welcome #info2 #map2 {
+    width: 500px;
+    display: inherit;
+  }
+  .img-zoom {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+  }
+  .transition {
+    -webkit-transform: scale(1.5);
+    -moz-transform: scale(1.5);
+    -o-transform: scale(1.5);
+    transform: scale(1.5);
+  }
+  footer {
+    flex-direction: row;
+    align-items: flex-end;
+    padding-bottom: 10px;
+  }
+}
+
+@media screen and (min-width: 760px) {
+  nav ul li {
+    font-size: 1.5em;
+  }
+  #gall #gal1 figure img {
+    width: 300px;
+  }
+  #gall #gal2 {
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
+    background-color: #6B0E04;
+  }
+  #gall #gal2 figure {
+    margin: 5px;
+  }
+  #gall #gal2 figure img {
+    width: 260px;
+    height: 280px;
+  }
+  #gall #gal2 figure img {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 950px) {
+  nav ul li {
+    font-size: 2em;
+  }
+  #weltxt {
+    font-size: 2em;
+  }
+  #welcome {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #welcome #info1 {
+    margin-bottom: 50px;
+  }
+  #welcome #info1 ul {
+    width: 400px;
+  }
+  #welcome #info1 #map1 {
+    float: right;
+    width: 500px;
+  }
+  #welcome #info2 ul {
+    width: 400px;
+    float: left;
+  }
+  #welcome #info2 #map2 {
+    float: right;
+    width: 500px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  nav #Blogo img {
+    width: auto;
+    position: absolute;
+    padding-left: 3em;
+    padding-top: .5em;
+  }
+  nav #Blogo ul {
+    display: flex;
+    justify-content: center;
+    height: 210px;
+  }
+  nav #Blogo ul li a {
+    font-size: 1.3em;
+  }
+}
